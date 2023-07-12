@@ -140,20 +140,30 @@
 
         <p>
             1 Donner une définition de la programmation orientée objet  
+            La programmation orientée objet est un modèle de langage de programmation qui s'articule autour d'objets et de données, plutôt que d'actions et de logique.
 
             2 Qu'est-ce qu'une classe ? Comment la déclare-t-on ? 
+                Une classe c'est comme un moule, on lui donne des attributs pour créer des objets. On la déclare avec un __construct
 
-            3 Qu'est-ce qu'un objet ? 
+            3 Qu'est-ce qu'un objet ?
+                Un objet c'est le résultat d'une classe
 
             4 Définir la notion de propriété / attribut / méthode 
+                Attributs : les variables décrivant l'état de l'objet
+                Méthodes : les fonctions appliqubles à l'objet
 
             5 Qu'est-ce que la visibilité d'une propriété ou d'une méthode ? Citer les différents types de visibilité 
+                La visibilité permet de définir de quelle manière un attribut ou une méthode d'un objet sera accessible dans le programme.
+                Private, Public, protected
 
             6 Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d'une classe ? 
+                objet = new ClassObjet
 
             7 Qu'est-ce que l'encapsulation ? 
+                L'encapsulation ça sert à empêcher de modifier ou d'accéder aux objets par un autre moyen que ceux mis en place par le développeur
 
             8 Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple 
+                Avec le mot clef extends ajouté à une classe, on va créer une classe « fille » qui va hériter de toutes les propriétés et méthodes de son parent par défaut et qui va pouvoir les manipuler de la même façon. Par exemple sur cinéma on avait une classe Personne et on 
 
             9 Définir l'opérateur de résolution de portée 
 
@@ -201,13 +211,20 @@
         <p>
 
             1 Qu'est-ce que la modélisation de données ? Définir la méthode Merise 
+                La modélisation des données est le processus de représentation graphique des flux de données
+                MERISE est donc une méthode d'analyse et de conception des systemes informatiques basée sur le principe de la séparation des données et des traitements. Elle possède un certain nombre de modèles (ou schémas) qui sont répartis sur trois niveaux :
+                le niveau conceptuel ;
+                le niveau logique ou organisationnel ;
+                le niveau physique.
 
             2 Quelles sont les 3 étapes principales de la méthode Merise ?  
             a : Analyse, conception et réalisation 
 
             3 Qu'est-ce qu'un modèle conceptuel de données (MCD) en Merise ? 
+                MCD : Modèle conceptuel de données
 
             4 Qu'est-ce qu'un modèle logique de données (MLD) en Merise ? 
+                MLD : Modèle logique de données
 
             5 Donner la définition des mots suivants : 
                 a : Entité
@@ -224,7 +241,7 @@
                 b : MySQL
                 c : SGBD (donner 2 exemples de SGBD) 
 
-            9 Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___ 
+            9 Dans une base de données, les données sont stockées dans des TABLES . Celles-ci sont constituées de lignes appelées ENREGISTREMENT et de colonnes appelées CHAMPS OU ATTRIBUTS
 
             10 Quelle est la différence entre une base de données relationnelle et non relationnelle ? 
 
@@ -281,10 +298,16 @@
         <p>
 
             1 Qu'est-ce que l'injection SQL ? Comment s'en prémunir ? 
+                Une attaque par injection SQL utilise un code SQL malveillant pour manipuler la base de donnée.
+                Pour s'en prémunir on fait des requêtes préparées et de requêtes paramétrées
 
             2 Qu'est-ce que la faille XSS ? Comment s'en prémunir ? 
+                C'est une faille qui permet à un utilisateur malvaillant d'injecter du code dans les entrées (form etc..)
+                Pour s'en prémunir on va utiliser des filtres du type htmlspecialchars
 
             3 Qu'est-ce que la faille CSRF ? Comment s'en prémunir ? 
+                C'est une action visant un site ou une page précise en utilisant l'utilisateur comme déclencheur, sans qu'il le sache.
+                Pourquoi s'en prémunir on va utiliser les Tokens CSRF ou la demande de confirmation.
 
             4 Définir l'attaque par force brute et l'attaque par dictionnaire 
 

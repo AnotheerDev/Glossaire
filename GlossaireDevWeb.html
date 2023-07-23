@@ -48,18 +48,54 @@
                 une constante c'est une valeur qui est immuable et c'est la toute la différence avec une variable 
 
             6 Qu'est-ce qu'une superglobale, combien en existent-ils et donner un exemple d'utilisation
+                une superglobale est une variable spéciale qui est automatiquement accessible depuis n'importe quel contexte (fonctions, classes, fichiers) , il en exite 9 :
+                    $GLOBALS : Contient toutes les variables globales définies dans le script PHP.
+                    $_SERVER : Contient des informations sur le serveur et l'environnement d'exécution.
+                    $_GET : Contient les données envoyées via une requête HTTP GET.
+                    $_POST : Contient les données envoyées via une requête HTTP POST.
+                    $_FILES : Contient les informations sur les fichiers téléchargés via une requête HTTP POST.
+                    $_COOKIE : Contient les cookies envoyés par le client.
+                    $_SESSION : Contient les variables de session.
+                    $_REQUEST : Contient les données envoyées via une requête HTTP, quel que soit la méthode utilisée (GET, POST, etc.).
+                    $_ENV : Contient les variables d'environnement du système.
+                ex: Exemple avec $_GET
+                    Si l'URL est : http://exemple.com/page.php?nom=John&age=30
+                    
+                    Récupération des valeurs des paramètres 'nom' et 'age' envoyés en GET
+                    $nom = $_GET['nom'];
+                    $age = $_GET['age'];
+                    
+                    Affichage des valeurs
+                    echo "Bonjour, je m'appelle $nom et j'ai $age ans.";
+
 
             7 Quels sont les différents types (primitifs) que l'on peut associer à une variable en PHP ? Les citer et en donner des exemples(ne pas oublier le type d'une variable sans valeur)
+                Entier (int) : Représente un nombre entier sans décimales.
+                Nombre à virgule flottante (float) : Représente un nombre avec des décimales.
+                Chaîne de caractères (string) : Représente une séquence de caractères.
+                Booléen (bool) : Représente une valeur vraie (true) ou fausse (false).
+                Tableau (array) : Représente une collection ordonnée d'éléments.
+                Null : Représente l'absence de valeur.
+                Ressource (resource) : Représente une référence à une ressource externe, telle qu'une connexion à une base de données.
 
             8 Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels?
+                Tableaux indexés (ou numériques), Tableaux associatifs
 
             9 Quelles  sont  les  différentes  structures  de  contrôles  qu'il existe  en  algorithmie? Donner un exemple pour chacune d'entre elles
+                La séquence ex exécuter instructions les unes après les autres, dans l'ordre spécifié.
+                La répétition ex boucle foreach
+                La sélection ex if
 
             10 Quelle est la fonction PHP permettant de demander la longueur d'une chaîne de caractères?
+                La fonction est strlen()
 
             11 Qu'est-ce qu'une session? Quelle fonction permet de démarrer une session en PHP?Donner un exemple d'utilisation en PHP
+                C'est une fonctionnalité qui permet de stocker et de maintenir des données spécifiques d'un utilisateur tout au long de sa visite sur un site web
+                Cette fonction est session_start()
+                Ex on peut enregistrer des informations dans la session à l'aide de $_SESSION['key'] = value.
 
             12 Qu'est-ce qu'un cookie ?Donner un exemple d'utilisation en PHP
+                Un cookie est un petit fichier texte stocké par le navigateur pour stocker des informations spécifiques d'un utilisateur ex on peut l'utiliser pour personnaliser l'expérience utilsateur pour ses prochaines visites
 
             13 Quelle est la différence entre les instructions «require» et «include» en PHP
                 La dif majeure entre require et inclure c'est que si require ne trouve pas le fichier en question il y aura une erreur fatale et le reste du code ne sera pas exécuté

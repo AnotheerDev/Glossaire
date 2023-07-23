@@ -385,18 +385,49 @@
                 Pourquoi s'en prémunir on va utiliser les Tokens CSRF ou la demande de confirmation.
 
             4 Définir l'attaque par force brute et l'attaque par dictionnaire 
+                Attaque par force brute :
+                L'attaque par force brute est une méthode dans laquelle un attaquant essaie de trouver un mot de passe en essayant toutes les combinaisons possibles de caractères jusqu'à ce qu'il trouve le bon mot de passe. 
+                
+                Attaque par dictionnaire :
+                L'attaque par dictionnaire est une méthode dans laquelle un attaquant utilise un dictionnaire ou une liste de mots courants pour essayer de deviner le mot de passe. 
 
             5 Existe-t-il d'autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement 
+                Injection SQL :
+                L'injection SQL est une faille qui permet à un attaquant d'insérer des instructions SQL malveillantes dans une application, généralement via des champs de saisie de données
+
+                Cross-Site Scripting (XSS) :
+                Le Cross-Site Scripting est une faille qui permet à un attaquant d'insérer des scripts malveillants dans des pages web consultées par d'autres utilisateurs.
+
+                Cross-Site Request Forgery (CSRF) :
+                Le Cross-Site Request Forgery est une faille qui permet à un attaquant de forcer un utilisateur authentifié à effectuer des actions non voulues sur un site web. 
+
+                Faille de sécurité des sessions :
+                Une faille de sécurité des sessions survient lorsque les mécanismes de gestion des sessions ne sont pas sécurisés
+
+                Débordement de tampon :
+                Le débordement de tampon est une faille de programmation où une application ne vérifie pas correctement la taille des données entrantes, permettant à un attaquant d'écrire des données malveillantes
+
+                Inclusion de fichiers arbitraires :
+                Cette faille permet à un attaquant d'inclure des fichiers arbitraires dans une application, ce qui peut entraîner l'exécution de code malveillant ou la divulgation de données sensibles.
+
+                Faille de gestion des erreurs :
+                Une faille de gestion des erreurs se produit lorsque des messages d'erreur détaillés sont affichés à l'utilisateur final, ce qui peut donner à un attaquant des informations précieuses sur l'infrastructure de l'application et faciliter d'autres attaques.
 
             6 A quoi servent l'authentification et l'autorisation dans un contexte d'application web ? 
+                Mécanismes de sécurité essentiels qui permettent de contrôler l'accès aux ressources et aux fonctionnalités de l'application
 
             7 Définir la notion de hachage d'un mot de passe et citer des algorithmes de hachage 
+                le hachage consiste à convertir le mot de passe en une chaîne de caractères alphanumériques (hachage) à l'aide d'une fonction de hachage. Cette fonction prend en entrée le mot de passe et génère une chaîne de caractères unique, généralement de longueur fixe, qui représente le mot de passe de manière irréversible.
+                SHA-256 et SHA-512 (Secure Hash Algorithm 256-bit et 512-bit)
 
             8 Qu'est-ce qu'une politique de mots de passe forts ? 
+                Mot de passe avec un longueur de minimum 8 caractères avec majuscule, chiffre et caractères spéciaux.
 
             9 Qu'est-ce que l'hameçonnage ? 
+                "phishing" en anglais, est une technique d'attaque informatique utilisée par des cybercriminels pour tromper les utilisateurs et leur soutirer des informations sensibles
 
             10 Définir la « validation des entrées » 
+                Elle permet de s'assurer que les données respectent les règles et les contraintes définies par l'application, ainsi que les formats et les types de données attendus.
         </p>
 
         <h2>RGPD</h2>

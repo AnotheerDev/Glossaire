@@ -252,11 +252,13 @@
                 Il y a aussi set et get
                 
             15 Qu'est-ce qu'un « autoload » ? 
+                Ce système va être capable de trouver automatiquement les fichier à importer lorsque l'on souhaite utiliser une classe.
 
             16 Comment appelle-t-on en français les « getters » et les « setters » ? 
+                Accesseurs et mutateurs
 
             17 Qu'est-ce que la sérialisation en PHP ?  
-
+                La sérialisation est utilisée pour transformer des objets, des tableaux associatifs, des variables et d'autres types de données complexes en une chaîne de caractères. 
 
             
         </p>
@@ -266,18 +268,27 @@
         <p>
 
             1 Qu'est-ce que l'architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l'acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence 
+                L'architecture client/serveur est un modèle où les clients envoient des demandes (comme des requêtes HTTP) aux serveurs pour obtenir des services ou des données. Si on ajoute un "S" à HTTP, cela devient HTTPS, qui sécurise les échanges de données entre le client et le serveur.
 
             2 Donner la définition d'un design pattern. Citer au moins 3 exemples de design pattern 
+                Un patron de conception est un arrangement caractéristique de modules, reconnu comme bonne pratique pour résoudre un problème de conception d'un logiciel. Il décrit une solution standard, utilisable dans la conception de différents logiciels.
+            MVC, Singleton, Factory
 
             3 Qu'est-ce que l'architecture MVC ? 
+                Modele vue controleur
 
             4 Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ? 
+                c'est un design pattern qui permet de séparer les données, la logique et l'interface utilisateur
 
             5 Quels sont les avantages de l'architecture MVC ? 
+                La séparation des responsabilités, la réutilisation du code, la facilité de maintenance, la flexibilité, la sécurité
 
             6 Existe-t-il des variantes à l'architecture MVC ? 
+                Oui il y a le MVP (Modèle Vue Présentateur) et le MVVM (Modèle Vue Vue-Modèle)
 
             7 Qu'est-ce qu'une API ? Définir l'architecture REST 
+                Une API est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications. API signifie Application Programming Interface.
+                REST (Representational State Transfer) est un style d'architecture logicielle qui définit un ensemble de contraintes à utiliser pour la création de services Web. Les services Web qui se conforment au style d'architecture REST, ou services Web RESTful, fournissent des interactions entre les clients et les ressources de manière légère, rapide et sans accroc.
 
             la séparation des responsabilitée c'est pour ça qu'on utilise un design pattern
 
@@ -310,8 +321,10 @@
                 d : Clé primaire / clé étrangère 
 
             6 Que devient une relation de type « Many To Many » dans le modèle logique de données ? 
+                Une relation de type "Many To Many" devient une table de jointure dans le modèle logique de données
 
             7 Qu'est-ce qu'une base de données ? 
+                Une base de données est un ensemble de données organisées et structurées
 
             8 Définir les notions suivantes :  
                 a : SQL
@@ -319,18 +332,35 @@
                 c : SGBD (donner 2 exemples de SGBD) 
 
             9 Dans une base de données, les données sont stockées dans des TABLES . Celles-ci sont constituées de lignes appelées ENREGISTREMENT et de colonnes appelées CHAMPS OU ATTRIBUTS
+                Les données sont stockées dans des tables, qui sont constituées de lignes appelées enregistrements et de colonnes appelées champs ou attributs.
 
             10 Quelle est la différence entre une base de données relationnelle et non relationnelle ? 
+                Une base de données relationnelle est une base de données qui permet de lier des informations entre elles, contrairement à une base de données non relationnelle qui ne permet pas de lier des informations entre elles.
 
             11 Qu'est-ce qu'une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ? 
+                Une jointure est une opération qui permet de combiner des données de deux ou plusieurs tables en fonction d'une ou plusieurs colonnes communes.
+                Il existe plusieurs types de jointures : 
+                Jointure interne (INNER JOIN)
+                Jointure externe (OUTER JOIN)
+                Jointure gauche (LEFT JOIN)
+                Jointure droite (RIGHT JOIN)
+                Jointure croisée (CROSS JOIN)
 
             12 A quoi sert une vue dans une base de données ? 
+                Une vue est une table virtuelle dont les données sont issues d'une ou plusieurs tables de la base de données. Elle permet de simplifier les requêtes complexes et de sécuriser l'accès aux données.
 
             13 Qu'est-ce que l'intégrité référentielle dans une base de données ? 
+                L'intégrité référentielle est une contrainte qui permet de garantir la cohérence des données entre deux tables liées par une clé étrangère.
 
             14 Quelles sont les fonctions d'agrégation en SQL ? 
+                AVG() : Retourne la moyenne des valeurs d'une colonne
+                COUNT() : Retourne le nombre de lignes d'une table
+                MAX() : Retourne la valeur maximale d'une colonne
+                MIN() : Retourne la valeur minimale d'une colonne
+                SUM() : Retourne la somme des valeurs d'une colonne
 
             15 Qu'est ce qu'un CRUD dans le contexte d'une base de données ? 
+                CRUD est un acronyme qui signifie Create, Read, Update, Delete. Il s'agit des quatre opérations de base pour la persistance des données dans une base de données ou un système d'information.
 
             16 Quelles sont les clauses qui permettent de : 
                 a : Insérer un nouvel enregistrement dans une table 
@@ -343,6 +373,7 @@
                 h : Concaténer 2 chaînes de caractères  
 
             17 Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ? 
+                On se connecte à une base de données en PHP avec PDO (PHP Data Object)
         </p>
 
         <h2>Symfony</h2>
@@ -369,7 +400,9 @@
                 Il permet aux développeurs de manipuler les données de la base de données en utilisant des objets et des opérations orientées objet, plutôt qu'en écrivant des requêtes SQL directement.
                 Doctrine
 
-            7 Qu'est-ce que l'injection de dépendances ? Quel est l'outil utilisé dans ce contexte et quel fichier contient l'intégralité des dépendances du projet ? 
+            7 Qu'est-ce que l'injection de dépendances ? Quel est l'outil utilisé dans ce contexte et quel fichier contient l'intégralité des dépendances du projet ?
+                L'injection de dépendances est un design pattern qui permet de séparer la création d'un objet de son utilisation.
+                C'est le fichier services.yaml qui contient l'intégralité des dépendances du projet 
 
             8 Que permet le bundle Maker au sein de Symfony ?  
                 Le bundle Maker au sein de Symfony permet de générer automatiquement du code de base pour les différentes parties d'une application Symfony, comme les entités, les contrôleurs, les formulaires
@@ -443,6 +476,7 @@
                 Elle permet de s'assurer que les données respectent les règles et les contraintes définies par l'application, ainsi que les formats et les types de données attendus.
         
             11 Qu'est ce que l'empreinte numérique
+                L'empreinte numérique est une empreinte unique qui permet d'identifier un utilisateur sur Internet. Elle est générée à partir des données de l'utilisateur, telles que son adresse IP, son navigateur, son système d'exploitation, etc.
             </p>
 
         <h2>RGPD</h2>
@@ -531,7 +565,8 @@
             12 Qu'est-ce que l'optimisation des images pour le référencement ? 
                 Optimisez les images en leur donnant un nom clair et explicite, Séparez ensuite tous les mots par des tirets pour que Google puisse les identifier
 
-            13 Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ? 
+            13 Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
+                Un plan de site est un fichier qui répertorie les pages d'un site web pour permettre aux moteurs de recherche de les parcourir plus intelligemment. Il peut être au format XML ou HTML. 
 
 
             Penser à mettre des mots clé avec balise strong et em
@@ -542,36 +577,69 @@
         <p>
 
             1 Qu'est-ce que la gestion de projet ? 
+                La gestion de projet est l'application de connaissances, de compétences, d'outils et de techniques aux activités d'un projet afin d'en atteindre les objectifs.
 
-            2 Qu'est-ce qu'une méthode Agile de gestion de projet ?  
+            2 Qu'est-ce qu'une méthode Agile de gestion de projet ?
+                Les méthodes agiles sont des méthodes de gestion de projet qui permettent de répondre à des besoins complexes et changeants. Elles reposent sur une organisation souple et une forte responsabilisation des équipes.  
 
-            3 Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages 
+            3 Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages
+                MoSCoW est une méthode de priorisation des exigences qui permet de définir les priorités d'un projet en fonction de quatre critères : Must have, Should have, Could have, Won't have this time. 
+                Avantages : 
+                - Permet de prioriser les exigences
+                - Permet de définir les exigences qui ne seront pas traitées dans le projet
+                - Permet de définir les exigences qui pourront être traitées dans un second temps
 
-            4 A quoi sert la méthodologie MVP ? Citer les caractéristiques clés 
+            4 A quoi sert la méthodologie MVP ? Citer les caractéristiques clés
+                La méthodologie MVP (Minimum Viable Product) est une méthode de développement de produit qui consiste à développer un produit avec un ensemble de fonctionnalités minimums, puis à le tester auprès des utilisateurs pour obtenir des retours et l'améliorer.
+                Caractéristiques clés : 
+                - Développement rapide
+                - Coûts réduits
+                - Risques réduits
+                - Retours utilisateurs
 
-            5 Qu'est-ce que la planification itérative ? 
+            5 Qu'est-ce que la planification itérative ?
+                La planification itérative est une méthode de planification de projet qui consiste à planifier le projet en plusieurs itérations. Chaque itération est un cycle de développement complet qui comprend la conception, le développement, les tests et la livraison d'une version du produit.
 
             6 Citer 3 méthodes Agiles dans le cadre d'un projet informatique 
+                Scrum, Kanban, XP
 
-            7 Qu'est-ce qu'une réunion de revue de projet ?  
+            7 Qu'est-ce qu'une réunion de revue de projet ? 
+                Une réunion de revue de projet est une réunion qui permet de faire le point sur l'avancement du projet et de prendre des décisions pour la suite.
             
             8 Qu'est-ce qu'un livrable dans un projet ?
+                Un livrable est un élément qui doit être livré à la fin d'une phase ou d'un projet. Il peut s'agir d'un document, d'un produit, d'un service, etc.
 
             9 Quels sont les 3 piliers SCRUM ? Définir chacun d'entre eux 
+                Transparence : Tous les aspects du projet doivent être visibles pour l'équipe et les parties prenantes
+                Inspection : L'équipe doit inspecter régulièrement le produit et les processus pour identifier les problèmes et les améliorations possibles
+                Adaptation : L'équipe doit s'adapter aux changements et aux problèmes identifiés lors de l'inspection
 
-            10 Qu'est-ce que le DevOps et quel est son objectif principal ?  
+            10 Qu'est-ce que le DevOps et quel est son objectif principal ?
+                DevOps est une approche de développement logiciel qui vise à réduire le temps nécessaire pour développer et déployer des logiciels. Il s'agit d'une combinaison de pratiques et d'outils qui permettent aux équipes de développement et d'exploitation de travailler ensemble plus efficacement.
 
-            11 Qu'est-ce que l'intégration continue ?  
+            11 Qu'est-ce que l'intégration continue ? 
+                L'intégration continue est une pratique de développement logiciel qui consiste à intégrer régulièrement le code dans un référentiel partagé. Chaque intégration est vérifiée par une série de tests automatisés, ce qui permet de détecter les erreurs plus rapidement et de les corriger plus facilement.
 
-            12 Qu'est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ? 
+            12 Qu'est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?
+                Docker est une plateforme open source qui permet de créer, de déployer et d'exécuter des applications dans des conteneurs. Il est utile dans le cadre du DevOps car il permet de créer des environnements de développement et de production isolés et reproductibles.
 
-            13 Qu'est-ce qu'un test unitaire ?  
+            13 Qu'est-ce qu'un test unitaire ?
+                Un test unitaire est un test qui permet de vérifier le bon fonctionnement d'une unité de code (une fonction, une méthode, une classe, etc.).
 
             14 Quelle est l'unité de code testée lors d'un test unitaire ? 
 
-            15 Quelles sont les caractéristiques d'un bon test unitaire ? 
+
+            15 Quelles sont les caractéristiques d'un bon test unitaire ?
+                Un bon test unitaire doit être :
+                - Automatisé
+                - Isolé
+                - Répétable
+                - Indépendant
+                - Fiable
+                - Lisible 
 
             16 Qu'est-ce qu'une assertion dans un test unitaire ? 
+                Une assertion est une instruction qui permet de vérifier qu'une condition est vraie. Si la condition est fausse, le test échoue.
         </p>
 
         <h2>English </h2>
